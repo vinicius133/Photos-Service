@@ -117,35 +117,38 @@ body{
     margin: 0 1vw;
 }
 
+
+
+
 /* Adaptação Mobile */
 @media (max-width: 601px) {
     .banner-content button{
-        font-size: 0.9vh;
+        font-size: 1.2vh;
         height: 3vh;
-
+        width: 20vw;
     }
 }
 
 
 @media (max-width: 601px) {
     .banner-content h1{
-        font-size: 2vh;
+        font-size: 3vh;
         margin: 1vh 0;
     }
 }
 
 @media (max-width: 601px) {
     .banner-content h5{
-        font-size: 1vh;
+        font-size: 2vh;
         margin: 1vh 0;
     }
 }
 
 @media (max-width: 601px) {
     #acesso-button{
-        font-size: 0.9vh;
+        font-size: 1.2vh;
         height: 3vh;
-
+        width: 20vw;
 
     }
 }
@@ -159,5 +162,17 @@ body{
 @media (max-width: 601px) {
     #barrafixalinks a{
         font-size: 1.5vh;
+    }
+}
+
+@media (max-width: 601px) {
+    #barrafixa{
+        height: 6vh;
+    }
+}
+
+@media (max-width: 601px) {
+    #container{
+        padding-top: 5vh;
     }
 }
