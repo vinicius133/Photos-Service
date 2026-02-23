@@ -10,14 +10,14 @@
 
 body{
     height: 10000px;
-    background-color: aliceblue;
+    background-color: gainsboro;
+    color: rgb(19, 32, 32);
 }
 
 /*Container Geral*/
 #container{
     border: 1px solid red;
     width: 100%; /* Garante que em telas pequenas ele ocupe a tela toda */
-    height: 100vh;
     padding-top: 7.5vh;
 }
 
@@ -25,7 +25,7 @@ body{
 #barrafixa{
     height: 8vh;
     width: 100%;
-    background-color: black;
+    background-color: rgb(19, 32, 32);
     display: flex;
     align-items: center;
     position: fixed;
@@ -41,13 +41,13 @@ body{
 
 #barrafixalinks a{
     font-family: Helvetica;
-    color: aliceblue;
+    color: gainsboro;
     margin: 0 1vw;
 }
 
 
 #nome h1{
-    color: aliceblue;
+    color: gainsboro;
     font-family: Arial;
     margin-right: auto;
     padding-left: 1vh;
@@ -56,7 +56,7 @@ body{
 /*Banner/Hero principal*/
 #banner-principal{
     position: relative;
-    background-color: aliceblue;
+    background-color: gainsboro;
 }
 
 #banner-principal img{
@@ -100,8 +100,8 @@ body{
     height: 6vh;
     border-radius: 1000px;
     border: none;
-    background-color: black;
-    color: aliceblue;
+    background-color: rgb(19, 32, 32);
+    color: gainsboro;
     font-size: 2vh;
     margin: 0 1vw 0 0;
 }
@@ -111,11 +111,56 @@ body{
     height: 6vh;
     border-radius: 1000px;
     border: none;
-    background-color: #751FFF;
-    color: aliceblue;
+    background-color: #CB916E;
+    color: gainsboro;
     font-size: 2vh;
     margin: 0 1vw;
 }
+
+
+/* Caixas inferiores duplas */
+
+#caixa-inferior-left{
+    margin: 4vh 5vw;
+    width: 40vw;
+    position: relative;
+}
+
+#caixa-inferior-left img{
+    width: 40vw;
+    height: 50vh;
+    
+}
+
+.banner-content{
+    position: absolute;
+    z-index: 3;
+    top: 50%;         
+    left: 15%;
+    transform: translateY(-50%);
+    font-family: arial;
+}
+
+#caixa-inferior-left-content{
+    position: absolute;
+    z-index: 3;
+    top: 30%;         
+    left: 10%;
+    transform: translateY(-50%);
+    font-family: arial;
+    font-size: 25px;
+}
+
+#caixa-inferior-left-content h1{
+    margin: 1vh 0;
+
+}
+
+
+
+
+
+
 
 
 
