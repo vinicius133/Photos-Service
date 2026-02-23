@@ -1,0 +1,39 @@
+/* O asterisco significa: 'Vale para todo mundo no site' */
+*{
+    /* Tira as margens grudadas nas bordas que o navegador coloca sozinho */
+    margin: 0;
+    /* Tira o espaço interno padrão */
+    padding: 0;
+    /* Faz com que o tamanho da caixa não mude se colocar bordas */
+    box-sizing: border-box; 
+} 
+
+/*Container Geral*/
+#container{
+    border: 1px solid red;
+    width: 100%; /* Garante que em telas pequenas ele ocupe a tela toda */
+    height: 100%;
+}
+
+/*Caixa Superior fixa*/
+#contatosabsolute{
+    height: 7vh;
+    background-color: black;
+    display: flex;
+}
+
+#contatosabsolutelinks{
+    border: 1px solid red;
+    margin: right;
+    
+}
+
+#contatosabsolutelinks a{
+    font-family: Helvetica;
+    color: antiquewhite;
+    border: 1px solid red;
+    margin: 0 1vw;
+    
+}
+
+
