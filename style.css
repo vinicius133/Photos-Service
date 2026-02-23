@@ -13,7 +13,7 @@
     border: 1px solid red;
     width: 100%; /* Garante que em telas pequenas ele ocupe a tela toda */
     height: 100vh;
-    padding-top: 8vh;
+    padding-top: 7.5vh;
 }
 
 /*Caixa Superior fixa*/
@@ -48,6 +48,25 @@
     padding-left: 1vh;
 }
 
+/*Banner/Hero principal*/
+#banner-principal{
+    border: 1px solid purple;
+}
+
+#banner-principal img{
+    width: 100%;
+    height: 70vh;
+}
+
+@media (max-width: 601px) {
+    #banner-principal img{
+        height: 70%;
+    }
+
+}
+
+
+
 body{
-    height: 2000px;
+    height: 10000px;
 }
