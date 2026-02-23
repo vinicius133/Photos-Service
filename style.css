@@ -79,7 +79,7 @@ body{
 .banner-content{
     position: absolute;
     z-index: 3;
-    top: 40%;         
+    top: 65%;         
     left: 15%;
     transform: translateY(-50%);
     font-family: arial;
@@ -115,3 +115,46 @@ body{
     font-size: 2vh;
     margin: 0 1vw;
 }
+
+/* Adaptação Mobile */
+@media (max-width: 601px) {
+    .banner-content button{
+        font-size: 0.9vh;
+        height: 3vh;
+    }
+}
+
+
+@media (max-width: 601px) {
+    .banner-content h1{
+        font-size: 2vh;
+        margin: 1vh 0;
+    }
+}
+
+@media (max-width: 601px) {
+    .banner-content h5{
+        font-size: 1vh;
+        margin: 1vh 0;
+    }
+}
+
+@media (max-width: 601px) {
+    #acesso-button{
+        font-size: 0.9vh;
+        height: 3vh;
+    }
+}
+
+@media (max-width: 601px) {
+    #nome{
+        font-size: 1.5vh;
+    }
+}
+
+@media (max-width: 601px) {
+    #barrafixalinks a{
+        font-size: 1.5vh;
+    }
+}
+
