@@ -10,7 +10,7 @@
 
 body{
     height: 10000px;
-    background-color: white;
+    background-color: aliceblue;
 }
 
 /*Container Geral*/
@@ -41,13 +41,13 @@ body{
 
 #barrafixalinks a{
     font-family: Helvetica;
-    color: white;
+    color: aliceblue;
     margin: 0 1vw;
 }
 
 
 #nome h1{
-    color: white;
+    color: aliceblue;
     font-family: Arial;
     margin-right: auto;
     padding-left: 1vh;
@@ -56,7 +56,7 @@ body{
 /*Banner/Hero principal*/
 #banner-principal{
     position: relative;
-    background-color: #ffffff;
+    background-color: aliceblue;
 }
 
 #banner-principal img{
@@ -84,22 +84,34 @@ body{
     transform: translateY(-50%);
     font-family: arial;
     font-size: 25px;
-
 }
 
-
 .banner-content h1{
-   
     margin: 4vh 0;
 }
 
-/* .blur{
-    position: absolute;
-    z-index: 2;
-    top: 10%;         
-    transform: translateY(-50%);
-    background-color: antiquewhite;
-    width: 35%;
-    height: 180%;
+.banner-content h5{
+    margin: 4vh 0;
+}
 
-} */
+.banner-content button{
+    width: 14vw;
+    height: 6vh;
+    border-radius: 1000px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    font-size: 2vh;
+    margin: 0 1vw;
+}
+
+#acesso-button{
+    width: 14vw;
+    height: 6vh;
+    border-radius: 1000px;
+    border: none;
+    background-color: #751FFF;
+    color: aliceblue;
+    font-size: 2vh;
+    margin: 0 1vw;
+}
