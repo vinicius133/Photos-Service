@@ -8,6 +8,11 @@
     box-sizing: border-box; 
 } 
 
+body{
+    height: 10000px;
+    background-color: white;
+}
+
 /*Container Geral*/
 #container{
     border: 1px solid red;
@@ -36,13 +41,13 @@
 
 #barrafixalinks a{
     font-family: Helvetica;
-    color: antiquewhite;
+    color: white;
     margin: 0 1vw;
 }
 
 
 #nome h1{
-    color: antiquewhite;
+    color: white;
     font-family: Arial;
     margin-right: auto;
     padding-left: 1vh;
@@ -50,13 +55,18 @@
 
 /*Banner/Hero principal*/
 #banner-principal{
-    border: 1px solid purple;
+    position: relative;
+    background-color: #ffffff;
 }
 
 #banner-principal img{
     width: 100%;
     height: 70vh;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(to right, transparent 10%, black 60%);
+    mask-image: linear-gradient(to right, transparent 10%, black 60%);
 }
+
 
 @media (max-width: 601px) {
     #banner-principal img{
@@ -65,8 +75,31 @@
 
 }
 
+/* Conteúdo acima dos banners */
+.banner-content{
+    position: absolute;
+    z-index: 3;
+    top: 40%;         
+    left: 15%;
+    transform: translateY(-50%);
+    font-family: arial;
+    font-size: 25px;
 
-
-body{
-    height: 10000px;
 }
+
+
+.banner-content h1{
+   
+    margin: 4vh 0;
+}
+
+/* .blur{
+    position: absolute;
+    z-index: 2;
+    top: 10%;         
+    transform: translateY(-50%);
+    background-color: antiquewhite;
+    width: 35%;
+    height: 180%;
+
+} */
