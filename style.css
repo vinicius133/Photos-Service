@@ -9,7 +9,6 @@
 } 
 
 body{
-    height: 10000px;
     background-color: gainsboro;
     color: rgb(19, 32, 32);
 }
@@ -128,7 +127,6 @@ body{
 /* Caixa inferior esquerda #######################################################*/
 
 #caixas-inferiores{
-    border: 1px solid palevioletred;
     width: 100%;
     display: flex;
 }
@@ -138,7 +136,6 @@ body{
  /* margin: 4vh 5vw 4vh 5vw; */
     width: 40vw;
     position: relative;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: top;
@@ -186,7 +183,6 @@ body{
     margin: 4vh 10vw;
     width: 40vw;
     position: relative;
-    border: 1px solid red;
     display: flex;
     justify-content: center; 
     align-items: top;
@@ -228,7 +224,7 @@ body{
 }
 
 
-
+/* Caixa de verificação ################################################## */
 #modal-overlay {
     position: fixed;
     top: 0; left: 0;
