@@ -94,24 +94,34 @@ body{
 
 .banner-content button{
     width: 14vw;
-    height: 6vh;
+    height: 7vh;
     border-radius: 1000px;
     border: none;
     background-color: rgb(19, 32, 32);
     color: gainsboro;
-    font-size: 2vh;
+    font-size: 2.5vh;
     margin: 1vh 1vw 0 0;
 }
 
+.banner-content button:hover{
+    background-color: rgb(43, 75, 75);
+}
+
+
+
 #acesso-button{
     width: 14vw;
-    height: 6vh;
+    height: 7vh;
     border-radius: 1000px;
     border: none;
     background-color: #CB916E;
     color: rgb(19, 32, 32);
-    font-size: 2vh;
+    font-size: 2.5vh;
     margin: 0 1vw;
+}
+
+#acesso-button:hover{
+    background-color: #614534;
 }
 
 
@@ -165,6 +175,12 @@ body{
     margin: 4vh auto;
 }
 
+#button-portfolio-card:hover{
+    background-color: rgb(43, 75, 75);
+}
+
+
+
 /* Caixa inferior direita #######################################################*/
 #caixa-inferior-right{
     margin: 4vh 10vw;
@@ -207,6 +223,10 @@ body{
     background-color: #CB916E;
 }
 
+#button-inferior-left:hover{
+    background-color: #614534;
+}
+
 
 
 
@@ -222,10 +242,10 @@ body{
         height: 7vh;
     }
     #nome h1 {
-        font-size: 23px; 
+        font-size: 18px; 
     }
     #barrafixalinks a {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     /* 2. Banner Principal (Hero) */
