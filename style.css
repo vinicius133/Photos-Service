@@ -20,7 +20,7 @@ body{
     padding-top: 7.5vh;
 }
 
-/*Caixa Superior fixa*/
+/*Caixa Superior fixa#######################################################*/
 #barrafixa{
     height: 8vh;
     width: 100%;
@@ -36,6 +36,7 @@ body{
 #barrafixalinks{
     justify-content: right;
     margin-left: auto;
+    margin-right: auto;
 }
 
 #barrafixalinks a{
@@ -53,10 +54,11 @@ body{
     font-size: 50px;
 }
 
-/*Banner/Hero principal*/
+/*Banner/Hero principal #######################################################*/
 #banner-principal{
     position: relative;
     background-color: gainsboro;
+    width: 100%;
 }
 
 #banner-principal img{
@@ -68,14 +70,7 @@ body{
 }
 
 
-@media (max-width: 601px) {
-    #banner-principal img{
-        height: 70%;
-    }
-
-}
-
-/* Conteúdo acima dos banners */
+/* Conteúdo acima dos banners #######################################################*/
 .banner-content{
     position: absolute;
     z-index: 3;
@@ -119,17 +114,19 @@ body{
 }
 
 
-/* Caixa inferior esquerda */
+/* Caixa inferior esquerda #######################################################*/
 
 #caixas-inferiores{
     border: 1px solid palevioletred;
-    width: 100%;
+    width: 100vw;
     display: flex;
+
 }
 
 #caixa-inferior-left{
-    margin: 4vh 5vw;
-    width: 30vw;
+    margin: 4vh 10vw;
+ /* margin: 4vh 5vw 4vh 5vw; */
+    width: 40vw;
     position: relative;
     border: 1px solid red;
     display: flex;
@@ -137,35 +134,12 @@ body{
     align-items: top;
 }
 
-@media (max-width: 601px) {
-    #caixa-inferior-left{
-        margin-left: 10vw;
-    }
-}
-
-
 
 #caixa-inferior-left img{
-    width: 40vw;
-    height: 50vh;
+    width: 100%;
+    height: 100%;
 }
 
-@media (max-width: 601px) {
-    #caixa-inferior-left img{
-        height: 20vh;   
-    }
-}
-
-
-
-.banner-content{
-    position: absolute;
-    z-index: 3;
-    top: 50%;         
-    left: 15%;
-    transform: translateY(-50%);
-    font-family: arial;
-}
 
 #caixa-inferior-left-content{
     position: absolute;
@@ -177,7 +151,6 @@ body{
 
 #caixa-inferior-left-content h1{
     margin: 2.5vh 0;
-
 }
 
 
@@ -190,96 +163,100 @@ body{
     color: gainsboro;
     font-size: 2vh;
     margin: 4vh auto;
- 
 }
 
-/* Caixa inferior direita */
+/* Caixa inferior direita #######################################################*/
 #caixa-inferior-right{
-    margin: 4vh 5vw 4vh 23vw;
-    width: 30vw;
+    margin: 4vh 10vw;
+    width: 40vw;
     position: relative;
     border: 1px solid red;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: top;
 }
 
 
+
 #caixa-inferior-right img{
-    width: 40vw;
-    height: 50vh;
+    width: 100%;
+    height: 100%;
 }
 
-@media (max-width: 601px) {
-    #caixa-inferior-right img{
-        height: 20vh;   
+
+
+
+
+
+
+/* --- ADAPTAÇÃO MOBILE UNIFICADA --- */
+@media (max-width: 600px) {
+    
+    /* 1. Ajustes da Barra Fixa */
+    #barrafixa {
+        height: 7vh;
+    }
+    #nome h1 {
+        font-size: 23px; 
+    }
+    #barrafixalinks a {
+        font-size: 14px;
+    }
+
+    /* 2. Banner Principal (Hero) */
+    #banner-principal img {
+        height: 45vh; 
+    }
+    .banner-content {
+        left: 5%;      
+        width: 90%;
+        top: 50%;
+    }
+    .banner-content h1 {
+        font-size: 32px;
+    }
+    .banner-content p {
+        font-size: 16px;
+    }
+    .banner-content button, #acesso-button {
+        width: 45%;    
+        height: 5vh;
+        font-size: 14px;
+        margin: 10px 2px;
+    }
+
+    /* 3. Caixas Inferiores */
+    #caixas-inferiores {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+
+    #caixa-inferior-left, #caixa-inferior-right {
+        width: 90vw;   
+        margin: 2vh 0; 
+    }
+
+    #caixa-inferior-left img, #caixa-inferior-right img {
+        width: 100%;       
+        height: 100%;     
+        display: block;  
+    }
+
+    #caixa-inferior-left-content {
+        width: 100%;   
+    }
+
+    #caixa-inferior-left-content h1 {
+        font-size: 24px;
+    }
+
+    #button-portfolio-card {
+        width: 60%;    
+        height: 5vh;
+        margin: 2vh auto;
     }
 }
-
-
-
-
-
-
-
-/* Adaptação Mobile */
-@media (max-width: 601px) {
-    .banner-content button{
-        font-size: 1.2vh;
-        height: 3vh;
-        width: 20vw;
-    }
-}
-
-
-@media (max-width: 601px) {
-    .banner-content h1{
-        font-size: 3vh;
-        margin: 1vh 0;
-    }
-}
-
-@media (max-width: 601px) {
-    .banner-content p{
-        font-size: 1.5vh;
-        margin: 1vh 0;
-    }
-}
-
-@media (max-width: 601px) {
-    #acesso-button{
-        font-size: 1.2vh;
-        height: 3vh;
-        width: 20vw;
-
-    }
-}
-
-@media (max-width: 601px) {
-    #nome h1{
-        font-size: 5vh;
-    }
-}
-
-@media (max-width: 601px) {
-    #barrafixalinks a{
-        font-size: 1.5vh;
-    }
-}
-
-@media (max-width: 601px) {
-    #barrafixa{
-        height: 6vh;
-    }
-}
-
-@media (max-width: 601px) {
-    #container{
-        padding-top: 5vh;
-    }
-}
-
-
 
 
 
