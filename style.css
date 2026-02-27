@@ -280,6 +280,11 @@ body{
 #btn-cancelar { background: #444; color: white; }
 #btn-entrar { background: #CB916E; color: #132020; }
 
+#rodape{
+    height: 1000px;
+    border: 1px solid red;
+    width: 100%;
+}
 
 
 /* --- ADAPTAÇÃO MOBILE UNIFICADA --- ##################################################*/
