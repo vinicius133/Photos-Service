@@ -8,18 +8,6 @@
 </head>
 <body>
     <div id="container"> 
-
-        <div id="modal-overlay">
-            <div id="modal-box">
-                <h2>Acesso Restrito</h2>
-                <p>Digite seu código de acesso para ver as fotos:</p>
-                <input type="text" id="input-codigo" placeholder="Insira o código">
-                <div class="modal-buttons">
-                    <button onclick="fecharModal()" id="btn-cancelar">Cancelar</button>
-                    <button onclick="processarAcesso()" id="btn-entrar">Entrar</button>
-                </div>
-            </div>
-        </div>
 <!-- Barra Superior com nome e contatos fixa -->
         <div id="barrafixa">
             <div id="nome">
@@ -56,10 +44,22 @@
             <div id="caixa-inferior-right">
                 <img src="./assets/casal.jpg" alt="Casal">
                 <div id="caixa-inferior-right-content">
-                    <h1>Teste</h1>
-                    <p>Teste teste teste</p>
-                    <button id="button-inferior-left">Teste teste</button>
+                    <h1>Entre em contato</h1>
+                    <p>Marque a sua sessão através do Whatsapp</p>
+                    <button id="button-inferior-left">Whatsapp</button>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-overlay" style="display: none;">
+        <div id="modal-box">
+            <h2>Acesso ao Drive</h2>
+            <p>Digite seu código de acesso:</p>
+            <input type="text" id="input-codigo" placeholder="Insira o código">
+            <div class="modal-buttons">
+                <button onclick="fecharModal()" id="btn-cancelar">Cancelar</button>
+                <button onclick="processarAcesso()" id="btn-entrar">Acessar</button>
             </div>
         </div>
     </div>

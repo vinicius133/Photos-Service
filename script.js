@@ -1,20 +1,21 @@
-// Abre o modal
 function verificarAcesso() {
     document.getElementById("modal-overlay").style.display = "flex";
 }
 
-// Fecha o modal
 function fecharModal() {
     document.getElementById("modal-overlay").style.display = "none";
 }
 
-// Checa o código
 function processarAcesso() {
-    let codigo = document.getElementById("input-codigo").value;
+    const codigo = document.getElementById("input-codigo").value.trim();
     
-    if (codigo === "CLIENTE01") {
-        window.location.href = "https://drive.google.com/sua-pasta-01";
+    if (codigo !== "") {
+        // Redireciona para uma URL que depende do código digitado
+        // Se o código for 'FOTOS2024', ele tentará ir para bit.ly/FOTOS2024
+        // Isso impede que alguém veja todos os seus links no código-fonte.
+        window.open("https://bit.ly/" + codigo, '_blank');
+        // fecharModal();
     } else {
-        alert("Código incorreto!");
+        alert("Por favor, digite um código.");
     }
 }
