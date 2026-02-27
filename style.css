@@ -281,9 +281,10 @@ body{
 #btn-entrar { background: #CB916E; color: #132020; }
 
 #rodape{
-    height: 1000px;
     border: 1px solid red;
     width: 100%;
+    background-color: rgb(19, 32, 32);
+    height: 500px;
 }
 
 
