@@ -280,11 +280,58 @@ body{
 #btn-cancelar { background: #444; color: white; }
 #btn-entrar { background: #CB916E; color: #132020; }
 
-#rodape{
-    border: 1px solid red;
-    width: 100%;
+
+#rodape {
     background-color: rgb(19, 32, 32);
-    height: 500px;
+    color: gainsboro;
+    padding: 60px 10% 20px 10%;
+    font-family: Arial, sans-serif;
+}
+
+.rodape-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.rodape-info h2 {
+    color: #CB916E;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.rodape-links h3, .rodape-social h3 {
+    margin-bottom: 20px;
+    color: #CB916E;
+}
+
+.rodape-links a {
+    display: block;
+    color: gainsboro;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.rodape-links a:hover {
+    color: #CB916E;
+}
+
+.rodape-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Ajuste mobile para o rodapé */
+@media (max-width: 600px) {
+    .rodape-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 
