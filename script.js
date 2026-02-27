@@ -10,12 +10,13 @@ function processarAcesso() {
     const codigo = document.getElementById("input-codigo").value.trim();
     
     if (codigo !== "") {
-        // Redireciona para uma URL que depende do código digitado
-        // Se o código for 'FOTOS2024', ele tentará ir para bit.ly/FOTOS2024
-        // Isso impede que alguém veja todos os seus links no código-fonte.
-        window.open("https://bit.ly/" + codigo, '_blank');
-        // fecharModal();
+        const urlFinal = "https://t.ly/" + codigo;
+        
+        window.open(urlFinal, '_blank');
+        
+        fecharModal();
+        document.getElementById("input-codigo").value = "";
     } else {
-        alert("Por favor, digite um código.");
+        alert("Por favor, digite um código!");
     }
 }
