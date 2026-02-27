@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio - Iron Lens</title>
+    <style>
+        .gallery-container {
+            padding: 120px 10% 50px 10%;
+            background-color: gainsboro;
+            min-height: 100vh;
+        }
+        .gallery-title {
+            text-align: center;
+            font-family: Arial;
+            font-size: 40px;
+            color: #132020;
+            margin-bottom: 50px;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .photo-item {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .photo-item img:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 600px) {
+            .gallery-container { padding-top: 100px; }
+            .photo-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="barrafixa">
+        <div id="nome"><h1>Iron Lens</h1></div>
+        <div id="barrafixalinks">
+            <a href="index.html">Início</a>
+            <a href="https://wa.me/5561985468768">Whatsapp</a>
+        </div>
+    </div>
+
+    <div class="gallery-container">
+        <h1 class="gallery-title">Nosso Portfólio</h1>
+        
+        <div class="photo-grid">
+            <div class="photo-item"><img src="./assets/portfolio/foto1.jpg" alt="Trabalho 1"></div>
+            <div class="photo-item"><img src="./assets/portfolio/foto2.jpg" alt="Trabalho 2"></div>
+            <div class="photo-item"><img src="./assets/portfolio/foto3.jpg" alt="Trabalho 3"></div>
+            <div class="photo-item"><img src="./assets/portfolio/foto4.jpg" alt="Trabalho 4"></div>
+            <div class="photo-item"><img src="./assets/portfolio/foto5.jpg" alt="Trabalho 5"></div>
+            <div class="photo-item"><img src="./assets/portfolio/foto6.jpg" alt="Trabalho 6"></div>
+        </div>
+    </div>
+
+    <footer id="rodape">
+        <div class="rodape-bottom">
+            <p>&copy; 2024 Iron Lens - Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
