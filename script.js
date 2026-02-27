@@ -10,7 +10,7 @@ function processarAcesso() {
     const codigo = document.getElementById("input-codigo").value.trim();
     
     if (codigo !== "") {
-        const urlFinal = "https://t.ly/" + codigo;
+        const urlFinal = "https://tinyurl.com/" + codigo;
         
         window.open(urlFinal, '_blank');
         
